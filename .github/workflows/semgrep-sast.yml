@@ -16,8 +16,3 @@ jobs:
         uses: semgrep/semgrep-action@v1
         with:
           config: auto
-          generateSarif: "1"
-
-      - name: Log findings to console
-        run: |
-          echo "Semgrep scan completed. Review findings above."
